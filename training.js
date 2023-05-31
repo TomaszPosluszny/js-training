@@ -75,11 +75,24 @@ console.log(stringLengths(['Tom', 'Agnieszka', 'Ala']));
 // 7. Task: Write a function that takes an array of objects containing information about people (first name, last name) and returns a new array where each object has an additional "fullName" field with the full name.
 
 const addFullName = (array) => {
-    return array.map((person) => {
-      return { ...person, fullName: `${person.firstName} ${person.lastName}` };
-    });
-  };
-  
-  const people = [{ firstName: "Jan", lastName: "Kowalski" }, { firstName: "Anna", lastName: "Nowak" }];
+	return array.map((person) => {
+		return { ...person, fullName: `${person.firstName} ${person.lastName}` };
+	});
+};
+
+const people = [
+	{ firstName: 'Jan', lastName: 'Kowalski' },
+	{ firstName: 'Anna', lastName: 'Nowak' },
+];
 const peopleWithFullName = addFullName(people);
 console.log(peopleWithFullName);
+
+// 8. Task: Write a function that takes an array of numbers and returns a new array with only the even numbers.
+
+const filterEvenNumbers = (array) => {
+	return array.filter((number) => number % 2 === 0);
+};
+
+const arrNumbers = [1, 2, 3, 4, 5];
+const evenNumbers = filterEvenNumbers(arrNumbers);
+console.log(evenNumbers);
