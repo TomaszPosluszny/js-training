@@ -96,3 +96,27 @@ const filterEvenNumbers = (array) => {
 const arrNumbers = [1, 2, 3, 4, 5];
 const evenNumbers = filterEvenNumbers(arrNumbers);
 console.log(evenNumbers);
+
+// 9. Task: Write a function that takes an array of strings and returns a new array where each string is reversed.
+
+const reverseStrings = (array) => {
+	return array.map((string) => string.split('').reverse().join(''));
+};
+
+const strings = ['Tomek', 'ma', 'auto'];
+const reversed = reverseStrings(strings);
+console.log(reversed);
+
+// 10. Sum numbers from 1 to a given integer:
+
+function sumNumbers(n) {
+	let sum = 0;
+
+	for (let i = 1; i <= n; i++) {
+		sum += i;
+	}
+
+	return sum;
+}
+
+console.log(sumNumbers(5)); 
