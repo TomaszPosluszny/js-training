@@ -120,3 +120,16 @@ function sumNumbers(n) {
 }
 
 console.log(sumNumbers(5)); 
+
+// 11. Create a function that prints numbers from 1 to 10 in the console, with a 1-second delay between each number.
+
+
+function printNumbers() {
+	for (let i = 1; i <= 10; i++) {
+	  setTimeout(() => {
+		console.log(i);
+	  }, i * 1000);
+	}
+  }
+  
+  printNumbers()
