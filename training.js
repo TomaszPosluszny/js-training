@@ -133,3 +133,16 @@ function printNumbers() {
   }
   
   printNumbers()
+
+  // 12. Write a function called getFirstAndLastCharacter that takes one argument - a string. The function should return a string containing the first and last characters of the input string.
+
+
+  function getFirstAndLastCharacter(str) {
+	const firstCharacter = str.charAt(0);
+	const lastCharacter = str.charAt(str.length - 1);
+	return firstCharacter + lastCharacter;
+  }
+  
+  console.log(getFirstAndLastCharacter('Hello')); // 'Ho'
+  console.log(getFirstAndLastCharacter('OpenAI')); // 'OI'
+  console.log(getFirstAndLastCharacter('JavaScript')); // 'Jt'
