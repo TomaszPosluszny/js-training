@@ -34,4 +34,26 @@ console.log(result);
 
 const input = prompt('Enter a string:');
 const uppercaseString = input.toUpperCase();
+
 console.log('Modified string:', uppercaseString);
+
+
+// 3 toLowerCase()
+
+// Task 1:  Write a function that takes two strings as arguments and returns a new string where both strings are converted to lowercase. Use the toLowerCase() method.
+
+function mergeAndConvertToLowerCase(a,b){
+const mergeString = a.concat(b)
+const lowercaseString = mergeString.toLowerCase()
+return lowercaseString
+}
+
+const resultLower = mergeAndConvertToLowerCase("Hello", "World")
+console.log(resultLower);
+
+
+// Task 2: Write a program that prompts the user for a string, converts all the letters to lowercase using the toLowerCase() method, and then displays the modified string on the screen.
+
+const inputLover = prompt("Enter a string:");
+var lowercaseString = inputLover.toLowerCase();
+console.log("Modified string:", lowercaseString);
