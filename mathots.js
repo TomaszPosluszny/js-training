@@ -57,3 +57,29 @@ console.log(resultLower);
 const inputLover = prompt("Enter a string:");
 var lowercaseString = inputLover.toLowerCase();
 console.log("Modified string:", lowercaseString);
+
+// split()
+
+//  Task 1: Counting words in a sentence The task is to determine the number of words in a given sentence. We can use the split() method to split the sentence into an array of words, and then count the number of elements in that array.
+
+function countWords(sentence) {
+    const words = sentence.split(" ");
+    return words.length;
+  }
+  
+  const sentence = "This is an example sentence.";
+  const wordCount = countWords(sentence);
+  console.log("Word count: " + wordCount);
+
+  // Task 2: Reversing a string.The task is to reverse a given string. We can use the split() method to convert the string into an array, then use the reverse() method to reverse the order of elements in the array. Finally, we use the join() method to concatenate the reversed characters back into a single string.
+
+  function reverseString(inputString) {
+    const charArray = inputString.split("");
+    const reversedArray = charArray.reverse();
+    const reversedString = reversedArray.join("");
+    return reversedString;
+  }
+  
+  const stringToReverse = "Hello, World!";
+  const reversedString = reverseString(stringToReverse);
+  console.log("Reversed string: " + reversedString);
