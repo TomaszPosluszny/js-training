@@ -102,3 +102,29 @@ var hour = 9;
 var minute = 30;
 var formattedTimeString = formatTime(hour, minute);
 console.log('Formatted time: ' + formattedTimeString);
+
+
+// indexOf
+
+//Task 1 : Check if an element exists in an array.
+
+const array = [1, 2, 3, 4, 5];
+const element = 1;
+
+if (array.indexOf(element) !== -1) {
+  console.log("The element is present in the array.");
+} else {
+  console.log("The element is not present in the array.");
+}
+
+//Task 2: Find the index of the first occurrence of a specific letter in a string
+
+const textTop = "Sample text";
+const letter = "t";
+
+const index = textTop.indexOf(letter);
+if (index !== -1) {
+  console.log(`The index of the first occurrence of the letter "${letter}" is ${index}.`);
+} else {
+  console.log(`The letter "${letter}" does not occur in the text.`);
+}
