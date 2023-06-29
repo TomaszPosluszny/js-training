@@ -128,3 +128,23 @@ if (index !== -1) {
 } else {
   console.log(`The letter "${letter}" does not occur in the text.`);
 }
+
+// slice
+
+//Task 1 : Get a subarray from an array
+
+const numbersSlice = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const startNumber = 2;
+const endNumber = 7;
+
+const subArray = numbersSlice.slice(startNumber, endNumber);
+console.log(subArray);  
+
+//Task 2: Get a portion of text from a string
+
+const textSlice = "Lorem ipsum dolor sit amet";
+const start = 6;
+const end = 11;
+
+const subText = text.slice(start, end);
+console.log(subText);  
