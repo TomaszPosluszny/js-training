@@ -103,7 +103,6 @@ var minute = 30;
 var formattedTimeString = formatTime(hour, minute);
 console.log('Formatted time: ' + formattedTimeString);
 
-
 // indexOf
 
 //Task 1 : Check if an element exists in an array.
@@ -112,21 +111,23 @@ const array = [1, 2, 3, 4, 5];
 const element = 1;
 
 if (array.indexOf(element) !== -1) {
-  console.log("The element is present in the array.");
+	console.log('The element is present in the array.');
 } else {
-  console.log("The element is not present in the array.");
+	console.log('The element is not present in the array.');
 }
 
 //Task 2: Find the index of the first occurrence of a specific letter in a string
 
-const textTop = "Sample text";
-const letter = "t";
+const textTop = 'Sample text';
+const letter = 't';
 
 const index = textTop.indexOf(letter);
 if (index !== -1) {
-  console.log(`The index of the first occurrence of the letter "${letter}" is ${index}.`);
+	console.log(
+		`The index of the first occurrence of the letter "${letter}" is ${index}.`
+	);
 } else {
-  console.log(`The letter "${letter}" does not occur in the text.`);
+	console.log(`The letter "${letter}" does not occur in the text.`);
 }
 
 // slice
@@ -138,13 +139,39 @@ const startNumber = 2;
 const endNumber = 7;
 
 const subArray = numbersSlice.slice(startNumber, endNumber);
-console.log(subArray);  
+console.log(subArray);
 
 //Task 2: Get a portion of text from a string
 
-const textSlice = "Lorem ipsum dolor sit amet";
+const textSlice = 'Lorem ipsum dolor sit amet';
 const start = 6;
 const end = 11;
 
 const subText = text.slice(start, end);
-console.log(subText);  
+console.log(subText);
+
+// concat
+
+//Task 1: Concatenating Two Arrays. Write a function that takes two arrays as arguments and returns a new array that is the result of concatenating those two arrays.
+
+function mergeArrays(array1, array2) {
+	return array1.concat(array2);
+}
+
+// Example usage
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = mergeArrays(array1, array2);
+console.log(mergedArray);
+
+//  Task 2: Concatenating Strings. Write a function that takes two strings as arguments and returns a new string that is the result of concatenating those two strings.
+
+function mergeStrings(string1, string2) {
+	return string1.concat(string2);
+  }
+  
+  // Example usage
+  const string1 = "Hello";
+  const string2 = "World!";
+  const mergedString = mergeStrings(string1, string2);
+  console.log(mergedString);
