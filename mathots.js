@@ -158,7 +158,6 @@ function mergeArrays(array1, array2) {
 	return array1.concat(array2);
 }
 
-// Example usage
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 const mergedArray = mergeArrays(array1, array2);
@@ -168,10 +167,26 @@ console.log(mergedArray);
 
 function mergeStrings(string1, string2) {
 	return string1.concat(string2);
-  }
-  
-  // Example usage
-  const string1 = "Hello";
-  const string2 = "World!";
-  const mergedString = mergeStrings(string1, string2);
-  console.log(mergedString);
+}
+
+
+
+const string1 = 'Hello';
+const string2 = 'World!';
+const mergedString = mergeStrings(string1, string2);
+console.log(mergedString);
+
+
+//replace
+
+//Task 1: Replacing all occurrences of a specific character in a string:
+
+const sentence1 = 'Hello, world!';
+const modifiedSentence = sentence1.replace('o', 'X');
+console.log(modifiedSentence);  
+
+//Task 2: Removing all whitespace characters from a string:
+
+const text2 = '   Hello,     world!   ';
+const modifiedText = text2.replace(/\s/g, '');
+console.log(modifiedText);  /
