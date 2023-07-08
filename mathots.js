@@ -169,13 +169,10 @@ function mergeStrings(string1, string2) {
 	return string1.concat(string2);
 }
 
-
-
 const string1 = 'Hello';
 const string2 = 'World!';
 const mergedString = mergeStrings(string1, string2);
 console.log(mergedString);
-
 
 //replace
 
@@ -183,10 +180,49 @@ console.log(mergedString);
 
 const sentence1 = 'Hello, world!';
 const modifiedSentence = sentence1.replace('o', 'X');
-console.log(modifiedSentence);  
+console.log(modifiedSentence);
 
 //Task 2: Removing all whitespace characters from a string:
 
 const text2 = '   Hello,     world!   ';
 const modifiedText = text2.replace(/\s/g, '');
-console.log(modifiedText);  /
+console.log(modifiedText);
+
+//trim
+
+//Task 1: Write a function that takes a password as an argument and checks if the password is valid. The validity conditions are: the password must be at least 8 characters long and cannot contain any leading or trailing spaces. Use the trim() method to remove any whitespace characters at the beginning and end of the password.
+
+function checkPassword(password) {
+	if (password.trim().length < 8) {
+		return false; // The password is too short
+	}
+
+	if (password !== password.trim()) {
+		return false;
+	}
+
+	return true;
+}
+
+// Example usage
+console.log(checkPassword('  password '));
+console.log(checkPassword('password123'));
+console.log(checkPassword('pass word'));
+
+//Task 2: Write a function that takes an array of strings and returns a new array where leading and trailing whitespace characters are removed from each string. Utilize the trim() method to remove whitespace characters.
+
+function removeWhitespace(stringsArray) {
+	let newArray = [];
+
+	for (let i = 0; i < stringsArray.length; i++) {
+		let string = stringsArray[i].trim();
+		newArray.push(string);
+	}
+
+	return newArray;
+}
+
+// Example usage
+let array3 = ['  string 1 ', ' string 2 ', '  string 3 '];
+let newArray = removeWhitespace(array3);
+console.log(newArray);
