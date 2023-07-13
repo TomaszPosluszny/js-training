@@ -204,7 +204,6 @@ function checkPassword(password) {
 	return true;
 }
 
-// Example usage
 console.log(checkPassword('  password '));
 console.log(checkPassword('password123'));
 console.log(checkPassword('pass word'));
@@ -222,7 +221,6 @@ function removeWhitespace(stringsArray) {
 	return newArray;
 }
 
-// Example usage
 let array3 = ['  string 1 ', ' string 2 ', '  string 3 '];
 let newArray = removeWhitespace(array3);
 console.log(newArray);
